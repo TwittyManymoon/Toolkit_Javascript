@@ -1,0 +1,36 @@
+<!-- EX1_JS_HTML_event
+Use event to call javascript function
+Dev: Twitty Manymoon -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EX0 - What's your name</title>
+    <meta charset="UTF-8" />
+    <!-- Javascript -->
+
+    <!-- Event 1 -->
+    <script>
+        function ONLOAD() {
+            alert("This is 'onload' event");
+        }
+    </script>
+    <!-- Event 2 -->
+    <script>
+        function ONMOUSEOVER() {
+            alert("This is 'onmouseover' event");
+        }
+    </script>
+</head>
+
+<!-- Calling -->
+
+<!-- Event 1. :  onload - run when the page start loading -->
+
+<body onload="ONLOAD()">
+    <!-- Event 2. :  onmouseover - run when cursor touch object -->
+    <a href="" onmouseover="ONMOUSEOVER()">Hello</a>
+</body>
+
+</html>
