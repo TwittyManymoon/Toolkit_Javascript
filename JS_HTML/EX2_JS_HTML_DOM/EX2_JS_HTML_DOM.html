@@ -1,0 +1,43 @@
+<!-- EX2_JS_HTML_DOM
+Reference object in HTML (DOM)
+Dev: Twitty Manymoon -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- KEY: There are 3 ways to refrence object
+1. full reference -> window.<object>.<property>...
+2. id reference -> document.getElementByID("<id>").<property>...
+3. this reference -> this.<object>.<property>... -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>EX2 - Object References</title>
+</head>
+
+<body>
+    <!-- 'id' reference -->
+    <h1 id="ID">ID is red</h1>
+    <!-- 'this' reference -->
+    <h1 onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">This is black</h1>
+    <!-- full reference -->
+    <img src="../_comp/panda.jpg" />
+</body>
+
+
+<script>
+    //'id' reference 
+    document.getElementById("ID").onmouseover = function () {
+        document.getElementById("ID").style.color = 'red';
+    };
+    document.getElementById("ID").onmouseout = function () {
+        document.getElementById("ID").style.color = 'black';
+    };
+    // full reference
+    window.document.images[0].onmouseover = function () {
+        alert("I AM PANDA!");
+    }
+
+</script>
+
+</html>
